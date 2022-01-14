@@ -1,8 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06BBCC;
-    --light: #F0FBFC;
-    --dark: #181d38;
+    --primary: #0d6efd;;
+    --secondary: #568EF7;
+    --light: #eeeeee;
+    --dark: #0A4AC2;
 }
 
 .fw-medium {
@@ -20,7 +21,10 @@
     bottom: 45px;
     z-index: 99;
 }
-
+//*** Items ***/
+.bg-light {
+    background-color: var(--light) !important;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -36,8 +40,13 @@
     opacity: 1;
 }
 
+/*** Text ***/
+.text-primary{
+    color: var(--secondary) !important;
+}
 
-/*** Button ***/
+    
+    /*** Button ***/
 .btn {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
@@ -47,6 +56,8 @@
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
 
 .btn-square {
@@ -97,7 +108,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 @media (max-width: 991.98px) {
@@ -189,6 +200,7 @@
     font-size: 22px;
     transition: .5s;
 }
+.logo {padding-left:100px;}
 
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
@@ -210,13 +222,16 @@
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
 }
-
+.bg-light {
+    background-color: var(--light) !important;
+}
 
 /*** Section Title ***/
 .section-title {
     position: relative;
     display: inline-block;
     text-transform: uppercase;
+    
 }
 
 .section-title::before {
